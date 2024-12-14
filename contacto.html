@@ -1,0 +1,140 @@
+<!doctype html> 
+<html lang="es">
+  <head> 
+    <meta charset= "utf-8"> 
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1,maximum-scale=1, minimun-scale=1">    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <link rel="shortcut icon" href="imagenes/logoweb.ico"/>
+   <link href="estilo/principal.css" type="text/css" rel="stylesheet"/>
+
+    <title>Principal</title> 
+    </head> 
+  
+      <body> 
+<!--****************ENCABEZADO IMAGEN***************** -->
+            <header>                             
+                  
+                  <img src="imagenes/encabezado.png"> 
+                 
+<!--*************** FIN ENCABEZADO IMAGEN************* -->
+    
+      <input type="checkbox" id="btn-menu">
+      <label for= "btn-menu"><img src="imagenes/menu.ico"></label>    
+      <nav class="menu">
+      <ul>
+      <li><a href="Principal.html">Principal</a></li>
+      <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+      <li><a href="Comercializacion.html">Comercializacion </a></li> 
+      <li><a href="Contacto.html"class="Contacto">Contacto</a></li> 
+      <li><a href="CatalogoDeProducto.html">Catalogo de Producto</a></li>
+      <li><a href="Consultas.html">Consultas</a></li>
+      <li><a href="TerminosYcondiciones.html">Termino y condiciones de uso</a></li>
+      <li>
+        <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+        <input type="text" class="form-control" placeholder="Buscar"> <!--<span class="glyphicon glyphicon-search"></span>--> 
+        </div>
+        </form>
+        </li>
+      </ul>
+      </nav>
+    </header>
+      
+      
+      <div class="container-fluid">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <!--<div class="jumbotron">-->
+      <div class="row">
+      
+
+            <div class="col-xs-6 col-sm-6 col-md-3" >
+                 <nav class="contacto">
+                  <img src="imagenes/redes.png" alt="smiley face" height="50" width= "50">
+                  
+                  <h5>SolucionesInfo@gmail.com</h5>
+                  <h5> click en la imagen para contactarnos en Facebook:</h5>
+                  <a href="https://www.facebook.com"><img src="imagenes/face.ico"></a>
+                      
+                 <h5> click en la imagen para contactarnos en Twitter:</h5>
+                 <a href="https://twitter.com/"><img src="imagenes/tw.ico"></a><br/><br/><br/>
+                 
+                </nav> <!--contacto-->
+
+            </div> <!--primer columna-->
+
+                <div class=" col-xs-4 col-sm-6 col-md-3">  
+                    <nav class="contacto">
+                      <img src="imagenes/telefono.png" alt="smiley face" height="50" width= "50">
+                      <h5> Sucursal Corrietes-Capital: 080-8962.<h5>
+                      <h5> Sucursal Chaco-Resitencia: 090-9678.</h5>
+                      <h5> Sucursal Formosa-Capital: 070-7832.</h5> <br/><br/>
+                    </nav>
+                </div>
+
+                
+
+                <div class="col-xs-12  col-md-3">  
+                  <nav class="contacto">
+                  <img src="imagenes/ubicacion.png" alt="smiley face" height="50" width= "50">
+                  <h5>Para cononocer nuestra ubicacion en Corrientes Capital click:<a href= "https://www.google.com.ar/maps/@-27.5069048,-58.8232454,15z?hl=es"> AQUI</a></h5> 
+                 <h5>Para cononocer nuestra ubicacion en Chaco Resistencia click:<a href= "https://www.google.com.ar/maps/@-27.5069048,-58.8232454,15z?hl=es"> AQUI</a></h5> 
+                  <h5>Para cononocer nuestra ubicacion en Formosa Capital click:<a href= "https://www.google.com.ar/maps/@-27.5069048,-58.8232454,15z?hl=es"> AQUI</a></h5> <br/><br/>
+
+
+
+
+                </nav>  
+                </div>
+
+                <div class="col-xs-12 col-md-3">  
+                      <nav class="contacto">
+                      <img src="imagenes/mensaje.png" alt="smiley face" height="50" width= "50">
+                      <h5>Haga su consulta aqui</h5>
+                      </nav>  
+
+                        <form role="form" method="post" action="mensaje.php"> 
+ 
+                        <div class="form-group">                        
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Introduzca su Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="Asunto" id="nombre" placeholder="Ingrese asunto de la consulta">
+                        </div>
+                        
+                        <textarea class="form-control" name="consulta" id="consulta" rows="6" placeholder="Consulta"></textarea>
+                        <button type="submit" class="btn btn-default">Enviar</button>
+                        <button type="reset" class="btn btn-default">Borrar</button>
+
+                    </form>
+
+                </div>
+
+
+
+            
+
+      </div> <!--div row-->
+        
+
+      
+  
+
+
+
+    </div> <!-- /container -->
+    <footer>
+     <p>SolucionesInfo@gmail.com</p>
+    </footer>
+
+    <!-- Librería jQuery requerida por los plugins de JavaScript -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+ 
+    <!-- Todos los plugins JavaScript de Bootstrap (también puedes
+         incluir archivos JavaScript individuales de los únicos
+         plugins que utilices) -->
+    <script src="js/bootstrap.min.js"></script>
+
+      </body> 
+      </html>

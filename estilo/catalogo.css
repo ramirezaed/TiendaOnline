@@ -1,0 +1,68 @@
+@CHARSET "ISO-8859-1";
+body{
+	background: #E0E0E0 ;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+/*encabezado*/
+header{
+	width:100%; /*ocupa el ancho de la pagina*/
+	display: flex; /*junta todas las imagenes del encabezado*/
+	height: 150px;
+	margin-bottom: 0px;
+}
+
+nav{
+	margin-top: 0px;
+}
+
+/*menu*/
+.menu {
+width: 100%; /*ocupa el ancho de la pagina*/
+margin: 0; /*para que quede junto el encabezado y menu*/
+list-style: none; /*quitar subrayado */
+padding: 0;
+display: flex; /* para que se aline uno al lado de otro*/
+justify-content: center;
+border-bottom:  3px solid #F06200;
+}
+
+
+.menu a {
+display: block;
+padding: 15px 20px;
+/*margin-top: 0px;*/
+color:  white;
+text-decoration: none;
+font-family: arial;
+font-size: 13px;
+text-transform: uppercase;
+
+
+
+}
+.menu li {
+	/*border-right: 1px solid green;*/
+	text-align: center;
+ 	flex-grow: 1; /*para que el menu siempre ocupe el 100 de la pagina*/
+ 	background:#111;
+
+}
+
+
+/*efecto color sobre botones*/
+.menu li:hover {
+	background: #FE5202;
+
+}
+
+
+/*IMAGEN SITIO WEB EN REPARACION*/
+.reparacion{
+	margin-top: 20px;
+	margin-left: 40%;
+}
+
+

@@ -1,0 +1,369 @@
+@CHARSET "ISO-8859-1";
+body{
+	background: white; /*#E0E0E0*/ 
+	margin-left:0px;
+	margin-right:0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.tituloPrincipal p {
+	color:red;
+	text-align: center;
+	margin-top: 0px;
+	font-size: 1.9em;
+}
+.tituloPrincipal h5{
+	color:black;
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+
+/********************* INICIO PAGINA PRINCIPAL ************************* */
+
+/*ENCABEZADO*/
+header img{
+	width:100%; /*ocupa el ancho de la pagina*/
+	
+}
+
+/*INICIO MENU*/
+
+#btn-menu{
+	display: none;
+	
+}
+
+ header label {
+		display: none;
+		width: 30px;
+		height: 30px;
+		padding-right: 3px;
+		float:right;
+
+}
+
+header label:hover{
+	background: #FE5202;
+}
+	
+
+
+.menu ul {
+width: 100%; /*ocupa el ancho de la pagina*/
+margin: 0; /*para que quede junto el encabezado y menu*/
+list-style: none; /*quitar subrayado */
+padding:  0; 
+display: flex; /* para que se aline uno al lado de otro*/
+border-bottom:  3px solid #FE5202;
+margin-bottom: 0px;
+}
+
+
+.menu a {
+width: 100%;
+display: block;
+padding: 20px 15px;*/
+margin-top: 0px;
+color:  white;
+text-decoration: none;
+font-family: arial;
+font-size: 13px;
+text-transform: uppercase;
+
+}
+.menu li {
+	
+	text-align: center;
+ 	flex-grow: 1; /*para que el menu siempre ocupe el 100 de la pagina*/
+ 	background:#111;
+}
+
+
+/*efecto color sobre botones*/
+.menu li:hover {
+	background: #FE5202;
+
+}
+
+@media (max-width: 1020px) {
+	header label {
+		display: block;
+		
+	}
+	header img{
+		width: 100%;
+		border-bottom:  3px solid #FE5202;
+	}
+
+	
+	.menu {
+		
+		position: absolute ; 
+		background:  #111 ;
+		width: 90% ;
+		margin-top: -300% ;	
+		transition: all 0.5s ; 	
+		border-right: 2px solid #FE5202;
+		z-index: 99;
+		
+		}
+		
+		.menu ul {
+			flex-direction: column;
+			width: 100%;
+			
+		}
+		
+		.menu a {
+			text-align: left;
+		}
+
+		.menu li{
+			z-index: 99;
+
+		}
+		#btn-menu:checked ~ .menu {	
+			margin: 0;
+			
+		}
+
+
+}
+
+/*FIN MENU*/
+
+
+.container-fluid{
+	margin-top: 27.5px;
+	background:white;
+	color: black;
+	width:100%;
+	text-align: center;
+	min-height: 380px;
+}
+.container-fluid h4{
+	text-align: center;
+	color: #FE5202;
+
+}
+
+
+/*BANNER*/
+.banner{	
+	margin-top: .5px;
+	width: 70%;
+	margin-left: 0px;
+	overflow: hidden;	
+	
+}
+
+
+.banner ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: banner 7s infinite;
+	animation-timing-function:ease; 
+	animation-direction: alternate;
+
+	
+}
+
+.banner li{
+	width: 100%;
+	list-style: none;
+}
+
+.banner img{
+	width: 100%;
+}
+
+
+@keyframes banner {												
+	0% {margin-left: 0%;}
+	20% {margin-left: 0%;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70%{margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100%{margin-left: -300%;}
+	
+}
+
+
+
+/******************************** FIN  PAGINA PRINCIPAL *********************************************/
+
+
+/********************************INICIO PAGINA CONTACTO *********************************************/
+
+
+.contacto ul {
+	border-bottom: .5px solid #FE5202;
+}
+
+
+.contacto h5{
+	text-align:center;
+	
+
+}
+ 
+
+/***********FIN CONTACTO*******************/
+
+/****** COMERCIALIZACION********************/ 
+.TituloMediosPago p{
+	text-align:center;
+	color: black;
+	font-size: 2em;
+	border-bottom: 1px solid #FE5202;
+	padding-bottom: 15;
+
+}
+.InfoMedioPago p{
+	color:black;
+	text-align: left;
+}
+.InfoMedioPago li{
+	text-align: left;
+}
+
+.Envios p{
+	text-align: center;
+	color: black;
+	font-size: 2em;
+	border-bottom: 1px solid #FE5202;
+	padding-bottom: 15;
+}
+
+.InfoEnvios p{
+	text-align: left;
+}
+.InfoEnvios li{
+	text-align: left;
+}
+.InfoCond p{
+	text-align: left;
+}
+
+/**********************PAGINA QUIENES SOMOS********************************/
+.quienes p{
+	text-align: center;
+	color: black;
+	font-size: 2em;
+	border-bottom: 1px solid #FE5202;
+	padding-bottom: 15;
+
+}
+
+.InfoQuienes li{
+	text-align: left;
+
+}
+
+.Staff p {
+	text-align: center;
+	color: black;
+	font-size: 2em;
+	border-bottom: 1px solid #FE5202;
+	padding-bottom: 15;
+}
+
+.InfoStaff li {
+	text-align: left;
+}
+
+.pie{
+	margin-top: 100%;
+	margin-left: 20px;
+}
+.garantia p{
+	text-align: center;
+	color: red;
+	font-size: 2em;
+}
+.infoGarantia li{
+text-align: left;
+text-align: justify;  	
+}
+
+footer{
+	background: black;
+	height: 3em;
+	/*margin-bottom: 0px;*/
+	width: 100%;
+}
+
+footer p{
+	border-top:2px solid #FE5202;
+	text-align: center;
+	font-size: 1.5em;
+	color:#8C9590;
+	padding-top: .3em
+}
+
+.servicios p{
+	text-align: left;
+	color:#FE5202;
+	font-size: 2em;
+	margin-bottom: 0px;
+}
+
+
+.InfoSer ul{
+	list-style-type: circle;
+}
+.InfoSer li {
+	text-align: left;
+	font-size: 1.5em;
+}
+
+
+.efectoQuien img{	 
+border-radius: 40% 0; /* Borde redondeado */
+box-shadow: 0px 0px 55px #000000; /* Sombra */
+padding:15px; /* Espacio entre la imagen y el borde */
+background:#CFCDCD; /* Color de fondo que se ve entre el espacio */
+-moz-transition: all 1s;
+-webkit-transition: all 1s;
+-o-transition: all 1s;
+}
+.efectoQuien img:hover {
+border-radius:0; /* Con esto quitamos el borde redondeado */
+-moz-transition: all 1s;
+-webkit-transition: all 1s;
+-o-transition: all 1s;
+cursor:pointer;
+
+-webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2)
+}
+
+.efectoPrincipal img{
+
+border-radius: 45% / 20%; /* Borde redondeado */
+box-shadow: 0px 0px 15px #000; /* Sombra */
+padding:0;
+-moz-transition: all .2s;
+-webkit-transition: all .2s;
+-o-transition: all .2s;
+z-index: 99;
+}
+.efectoPrincipal img:hover {
+border-radius: 0; /* Con esto eliminamos el borde redondeado */
+-moz-transition: all .2s;
+-webkit-transition: all .2s;
+-o-transition: all .2s;
+cursor:pointer;
+	}
